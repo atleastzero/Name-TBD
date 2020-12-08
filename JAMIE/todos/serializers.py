@@ -4,4 +4,9 @@ from .models import Todo, Routine
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ('')
+        fields = '__all__'
+
+class RoutineSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Routine
+        fields = '__all__'
